@@ -4,7 +4,7 @@ import streamlit as st
 def div():
   st.title("Division of Two Numbers")
   html_temp = """
-  <div style="background-color:black;padding:10px">
+  <div>
   </div>
   """
   st.markdown(html_temp,unsafe_allow_html=True)
