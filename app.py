@@ -16,7 +16,7 @@ def div():
   else:
     result=num1/num2
   
-  st.success('The output is {}'.format(result))
+  st.success(f'The division is {result}')
   
 if __name__=='__main__':
   div()
