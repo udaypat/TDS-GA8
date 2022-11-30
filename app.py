@@ -3,10 +3,11 @@ import pandas as pd
 import streamlit as st
 
 
-def div():
+def main():
   st.title("Division of Two Numbers")
   html_temp = """
-  <h2 style="text-align:center;">Division of 2 Numbers</h2>
+  <div style="background-color:black;padding:10px">
+  <h2 style="color:black;text-align:center;">Division of 2 Numbers</h2>
   </div>
   """
   st.markdown(html_temp,unsafe_allow_html=True)
@@ -18,7 +19,6 @@ def div():
   else:
     result=num1/num2
   
-  st.success(f'The Division is {result}')
+  st.success('The output is {}'.format(result))
   
-if __name__ == "__main__":
-  div()
+main()
